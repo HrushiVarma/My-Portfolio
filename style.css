@@ -1,0 +1,149 @@
+/* ===== BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  gap: 24px;
+  padding: 20px 40px;
+  background-color: #1a1a1a;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f0e040;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #161616;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+header p {
+  font-size: 20px;
+  color: #aaaaaa;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f0e040;
+}
+
+/* ===== PROJECT CARDS ===== */
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#projects h2 {
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(240, 224, 64, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card p {
+  color: #aaaaaa;
+}
+
+/* ===== CONTACT ===== */
+#contact a {
+  color: #f0e040;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #1a1a1a;
+  color: #555;
+  margin-top: 60px;
+}
+/* ===== LIGHT MODE ===== */
+body.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.light nav {
+  background-color: #f0f0f0;
+}
+
+body.light header {
+  background-color: #fafafa;
+}
+
+body.light .card {
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+
+body.light footer {
+  background-color: #f0f0f0;
+}
+
+/* ===== NAV BUTTON ===== */
+nav button {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid #f0e040;
+  color: #f0e040;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+nav button:hover {
+  background: #f0e040;
+  color: #000;
+}
